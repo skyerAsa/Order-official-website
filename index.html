@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Document</title>
+    <script type="text/javascript">
+    </script>
+
+    <body>
+        <div class="cars">
+            <div class="mycar">
+                <p><img src="image/Ha2b2dbdbb9654546af69bea8c397faba5.jpg"> 購物車( 0 ) $ 0</p>
+            </div>
+            <div class="carbuy">
+                <input type="button" value="確認結帳">
+            </div>
+        </div>
+
+        <div class="maintop" id="maintop"> </div>
+        <div class="mainbody">
+            <div>
+                <img src="image/main_01.jpg">
+            </div>
+            <div>
+                <img src="image/main_02.jpg">
+            </div>
+        </div>
+        <div class="thrbody">
+            <div>
+                <img src="image/main_03.jpg">
+            </div>
+            <div>
+                <img src="image/main_04.jpg">
+            </div>
+        </div>
+        <div class="fobody">
+            <div>
+                <img src="image/main_05.jpg">
+            </div>
+            <div>
+                <img src="image/main_06.jpg">
+            </div>
+        </div>
+        <div class="shopping">
+            <div class="goods">
+                <div class="goods_pic">
+                    <h2>青木瓜黑麴醋</h2>
+                    <img src="image/produceIMG01.png">
+                </div>
+                <div class="goods_text">
+                    <h3>天然檸檬酸與胺基酸的效用</h3>
+                    <ul style="list-style-type:disc;">
+                        <li>疲勞恢復</li>
+                        <li>可分解碳水化合物與脂肪</li>
+                        <li>含有18種類型的必要胺基酸，保持健康和美麗</li>
+                    </ul>
+                    <div class="goods_price">
+                        <p><span>建議售價 NT1,880</span></p>
+                    </div>
+                    <div class="goods_count">
+                        <div class="count_root">
+                            <div class="count_text">
+                                <p>購買數量</p>
+                                <p>Quantity</p>
+                            </div>
+                            <div class="count_button1">
+                                <input type="button" value="-">
+                            </div>
+                            <div class="count_number">
+                                <input type="text" value="1">
+                            </div>
+                            <div class="count_botton2">
+                                <input type="button" value="+">
+                            </div>
+                        </div>
+                        <div class="count_botton3">
+                            <input type="button" value="加入購物車">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goods">
+                <div class="goods_pic">
+                    <h2>青木瓜黑麴醋</h2>
+                    <img src="image/produceIMG01.png">
+                </div>
+                <div class="goods_text">
+                    <div class="effect">
+                        <h3>天然檸檬酸與胺基酸的效用</h3>
+                        <ul style="list-style-type:disc;">
+                            <li>疲勞恢復</li>
+                            <li>可分解碳水化合物與脂肪</li>
+                            <li>含有18種類型的必要胺基酸，保持健康和美麗</li>
+                        </ul>
+                    </div>
+                    <div class="goods_price">
+                        <p><span>建議售價 NT1,200</span></p>
+                    </div>
+                    <div class="goods_count">
+                        <div class="count_root">
+                            <div class="count_text">
+                                <p>購買數量</p>
+                                <p>Quantity</p>
+                            </div>
+                            <div class="count_button1">
+                                <input type="button" value="-">
+                            </div>
+                            <div class="count_number">
+                                <input type="text" value="1">
+                            </div>
+                            <div class="count_botton2">
+                                <input type="button" value="+">
+                            </div>
+                        </div>
+                        <div class="count_botton3">
+                            <input type="button" value="加入購物車">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="goto">
+            <a href="#title">
+                <p>前往結帳</p>
+            </a>
+        </div>
+        <div class="list">
+            <table>
+                <caption>
+                    <p>購物清單</p>
+                    <P class="text_bold">SHOPPING CART</P>
+                </caption>
+                <tbody>
+                    <tr id="result_tr">
+                        <th width="5%"></th>
+                        <th width="22.5%">商品名稱</th>
+                        <th width="22.5%">商品單價</th>
+                        <th width="22.5%">選擇數量</th>
+                        <th width="22.5%">小 計</th>
+                    </tr>
+                    <tr id="subtotal">
+                        <td class="eee" colspan="4">
+                            <div class="listTotal">0</div>
+                        </td>
+                        <td class="www">
+                            <button class="buy" id="buy">確認結帳</button></td>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="title" id="title">
+                <p>結帳付款</p>
+                <span>PAYMENT TERMS</span>
+            </div>
+            <div class="message">
+                <div class="msg">
+                    <div class="div">
+                        <p>收件人</p>
+                        <input type="text">
+                    </div>
+                    <div class="div">
+                        <p>聯絡電話</p>
+                        <input type="text">
+                    </div>
+                    <div class="div">
+                        <p>手機號碼</p>
+                        <input type="text">
+                    </div>
+                    <div class="div">
+                        <p>聯絡信箱</p>
+                        <input type="text">
+                    </div>
+                    <div class="only">
+                        <p>收件地址</p>
+                        <div class="msg_add">
+                            <select>
+                                        <option>臺北市</option>
+                                        <option>臺中市</option>
+                                        <option>臺南市</option>
+                                        <option>高雄市</option>
+                                    </select>
+                            <select>
+                                        <option>文山區</option>
+                                        <option>南屯區</option>
+                                        <option>東區</option>
+                                        <option>西屯區</option>
+                                    </select>
+                        </div>
+                    </div>
+                    <div class="msg_last">
+                        <input type="text">
+                    </div>
+
+                </div>
+                <div class="msg">
+                    <div class="msg_way">
+                        <p>統一發票</p>
+                        <div class="msg_ticketway">
+                            <div class="div">
+                                <input type="radio" value="二聯式發票" name="1"><span>二聯式發票</span></div>
+                            <div class="wayone">
+                                <input type="radio" value="三聯式發票" name="1"><span>三聯式發票</span></div>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <p>公司抬頭</p>
+                        <input type="text">
+                    </div>
+                    <div class="div">
+                        <p>統一編號</p>
+                        <input type="text">
+                    </div>
+                    <div class="div">
+                        <div class="msg_ck">
+                            <input type="checkbox" value="郵寄發票" name="郵件發票">郵寄發票 </div>
+                        <div class="msg_add">
+                            <select>
+                        <option>臺北市</option>
+                        <option>臺中市</option>
+                        <option>臺南市</option>
+                        <option>高雄市</option>
+                    </select>
+                            <select>
+                        <option>文山區</option>
+                        <option>南屯區</option>
+                        <option>東區</option>
+                        <option>西屯區</option>
+                    </select>
+                        </div>
+                    </div>
+                    <div class="msg_last">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="msg">
+                    <div class="div">
+                        <p>付款方式</p>
+                        <div class="mag_card">
+                            <input type="radio" name="2"><img src="image/pay_icon01.jpg">
+                            <input type="radio" name="2"><img src="image/pay_icon02.jpg">
+                        </div>
+                    </div>
+                    <div class="cardnumber">
+                        <p>信用卡號</p>
+                        <div class="msg_add">
+                            <ul>
+                                <li><input type="text" maxlength="4"></li>
+
+                                <li><input type="text" maxlength="4"></li>
+
+                                <li><input type="text" maxlength="4"></li>
+                                <li><input type="text" maxlength="4"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="only">
+                        <p>有效日期</p>
+                        <div class="msg_add">
+                            <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                            <select>
+                                        <option>2018</option>
+                                        <option>2019</option>
+                                        <option>2020</option>
+                                        <option>2021</option>
+                                        <option>2022</option>
+                                    </select>
+
+                        </div>
+                    </div>
+                    <div class="cardcode">
+                        <p>安全碼</p>
+                        <input type="text" maxlength="3">
+                        <span>
+                        <img src="image/pay_icon03.png">
+                    </span>
+                    </div>
+                    <div class="msg_declare">
+                        <div class="msg_ck">
+                            <input type="checkbox">
+                            <p>
+                                我願意遵守<span>服務條款、隱私權政策及個人資料蒐集與使用</span>之規定
+                                <br><tt>寄送說明：商品將於1-2個工作天內出貨，可於出貨後2-5天內收到</tt>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="msg_last">
+                        <button>確認付款</button>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+
+</html>

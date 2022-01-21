@@ -1,0 +1,691 @@
+.maintop {
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/Top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.mainbody {
+    display: flex;
+}
+
+.mainbody div img {
+    width: 100%;
+}
+
+.thrbody {
+    display: flex;
+}
+
+.thrbody div img {
+    width: 100%;
+}
+
+.fobody {
+    display: flex;
+}
+
+.fobody div img {
+    width: 100%;
+}
+
+.shopping {
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.goods {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.goods_pic {
+    width: 250px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.goods_pic h2 {
+    height: 130px;
+    line-height: 22px;
+    padding: 10px 0;
+    margin: auto 50px;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    border-right: 1px solid #505050;
+    border-left: 1px solid #505050;
+    color: #505050;
+}
+
+.goods_text {
+    line-height: 30px;
+    font-size: smaller;
+    color: #505050;
+}
+
+.goods_text ul {
+    padding: 0 20px;
+    color: #505050;
+}
+
+.goods_price {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #505050;
+    padding-bottom: 20px;
+    color: #505050;
+}
+
+.goods_price span {
+    font-size: 20px;
+}
+
+.goods_count {
+    display: flex;
+}
+
+.count_root {
+    display: flex;
+    justify-content: space-around;
+    color: #505050;
+}
+
+.count_text {
+    padding-right: 20px;
+    line-height: 15px;
+}
+
+.count_number input {
+    width: 20px;
+}
+
+.goods_count input {
+    background-color: transparent;
+    text-align: center;
+    outline: none;
+    border-style: none;
+}
+
+.count_botton3 {
+    padding-left: 30px;
+}
+
+.count_botton3 input {
+    padding: 10px 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.count_botton3 input:hover {
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+}
+
+.goto {
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #aaa;
+    border-style: dashed;
+    position: relative;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.goto p {
+    text-decoration: white;
+}
+
+.goto::before {
+    content: "";
+    height: 20px;
+    background: url(../image/arr_icon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-decoration: none;
+}
+
+.goto:hover {
+    transform: scale(1.25, 1.25);
+    transition: 1s;
+}
+
+.goto a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+.goto a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.goto a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.list {
+    max-width: 800px;
+    margin: 100px auto;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+
+.list table {
+    width: 100%;
+}
+
+.text_bold {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.list caption {
+    line-height: 35px;
+    /* margin-bottom: 20px; */
+}
+
+.list tr:first-child {
+    border: 1px solid #000;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    text-align: initial center;
+}
+
+.list th {
+    box-sizing: border-box;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.list:nth-child(1) th {
+    width: 5%;
+}
+
+.list td {
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.listTotal {
+    text-align: right;
+    font-size: 20px;
+}
+
+.list div {
+    /* margin: 0 10px; */
+    position: relative;
+}
+
+.listTotal:last-child .td {
+    width: 10px;
+}
+
+.listTotal::before {
+    content: "共計 NT$";
+    margin-right: 10px;
+}
+
+.buy {
+    width: 70%;
+    padding: 10px 1px;
+    background-color: #fff;
+    border-color: red;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.buy:hover {
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+    .mainbody,
+    .thrbody,
+    .fobody {
+        display: block;
+    }
+    .shopping {
+        width: 90%;
+        padding: 0 20px;
+        display: block;
+    }
+    .goods {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        box-sizing: border-box;
+        display: block;
+    }
+    .goods_pic {
+        padding: 0 0 0 0;
+    }
+    .goods_text {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .count_root {
+        justify-content: flex-start;
+    }
+    .goods_price {
+        box-sizing: border-box;
+    }
+    .goods_count {
+        display: block;
+    }
+    .count_botton3 {
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .count_botton3 input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    caption {
+        color: #fff;
+        background-color: #d00022;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 0px;
+        padding-top: 10px;
+    }
+    .list th {
+        display: none;
+    }
+    .buy {
+        width: 100%;
+        padding: 0 0 0 0;
+        padding: 10px 0px;
+        background-color: #fff;
+        color: #d00022;
+        border-color: #ccc;
+        border-radius: 10px;
+    }
+    td {
+        background-color: #4c4c4c;
+    }
+    .eee {
+        border-bottom-left-radius: 20px;
+    }
+    .www {
+        border-bottom-right-radius: 20px;
+    }
+    .listTotal:before {
+        position: absolute;
+        margin: auto;
+        left: -15px;
+        width: 100px;
+        text-align: left;
+        color: #ccc;
+    }
+    .listTotal {
+        color: #ccc;
+        left: 10px;
+    }
+    .buy:hover {
+        background-color: #f00;
+        color: #ccc;
+        cursor: pointer;
+    }
+}
+
+.title {
+    line-height: 30px;
+    text-align: center;
+}
+
+.title span {
+    font-weight: bold;
+}
+
+.message {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.msg {
+    max-width: 900px;
+    font-size: 17px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.msg>div {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.msg_way .msg_ticketway {
+    display: flex;
+}
+
+.msg p {
+    min-width: 100px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.msg input {
+    width: calc(100% - 100px);
+    font-size: 17px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.msg_last input,
+.msg_last button {
+    width: 100%;
+}
+
+.msg input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+.msg input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.msg_declare p {
+    line-height: 15px;
+    letter-spacing: 0.5px;
+}
+
+.msg_add {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.msg_add div {
+    width: 100%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.msg_add select {
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.msg_add div::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../image/arr_icon.jpg) no-repeat center;
+    pointer-events: none;
+}
+
+.msg_way {
+    min-width: 100%;
+}
+
+.way {
+    width: calc(100% - 100px);
+    display: flex;
+}
+
+.way div {
+    padding-right: 20px;
+}
+
+.wayone span {
+    position: relative;
+}
+
+.wayone span::before {
+    content: "(請填寫下方開立資訊)";
+    width: 150px;
+    position: absolute;
+    font-size: 12px;
+    bottom: -20px;
+    left: 0px;
+    color: #aaa;
+}
+
+.mag_card {
+    display: flex;
+}
+
+.mag_card span {
+    margin-right: 30px;
+}
+
+.mag_card img {
+    padding: 0 10px;
+}
+
+.msg_ck {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 0 0;
+}
+
+.msg_declare p {
+    text-align: left;
+}
+
+.msg_ck p {
+    font-size: 12px;
+    padding: 0 3px 0 2px;
+}
+
+.msg_ck span {
+    color: #f00;
+}
+
+.msg_ck tt {
+    color: #aaa;
+}
+
+.cardnumber ul {
+    width: 100%;
+    display: flex;
+    padding: 0 0 0 0;
+}
+
+.cardnumber input {
+    border-bottom: 1px solid;
+    width: 100%;
+    text-align: center;
+}
+
+.cardnumber li {
+    width: calc((100% - 100px) / 4);
+    position: relative;
+    margin-left: 15px;
+}
+
+.cardnumber li+li::before {
+    content: "-";
+    position: absolute;
+    left: -10px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.cardcode input {
+    width: 50px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.cardcode span {
+    position: relative;
+}
+
+.cardcode span::before {
+    content: "卡片背面三位數驗證碼";
+    width: 120px;
+    position: absolute;
+    font-size: 12px;
+    bottom: -15px;
+    left: 0px;
+    color: #aaa;
+}
+
+.msg_last {
+    padding-left: 20px;
+}
+
+.msg_last button:hover {
+    background-color: #d00022;
+    color: #fff;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 5px 2px 1px;
+    padding-top: 10px;
+}
+
+.msg_ck span {
+    color: #f00;
+}
+
+.msg_last button {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border: 2px solid #d00022;
+    border-radius: 8px;
+    background-color: rgb(0, 0, 0, 0);
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.cars {
+    height: 300px;
+    width: 10%;
+    right: 10px;
+    position: absolute;
+    position: fixed;
+}
+
+.mycar {
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    padding: 0px 10px;
+    border: 1px solid #000;
+    right: 0;
+}
+.mycar img{
+    width: 12px;
+}
+.carbuy {
+    width: 100%;
+    box-sizing: border-box;
+    height: 130px;
+    display: flex;
+    padding-top: 0px;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    right: 0;
+}
+
+.carbuy input {
+    width: 90%;
+    margin-top: 30px;
+    padding: 5px 0;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.carbuy input:hover {
+    background-color: red;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: medium;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 870px) {
+    .msg>div {
+        width: 100%;
+    }
+    .msg_way .msg_ticketway {
+        display: block;
+    }
+    .msg_declare {
+        padding: 30px 0px;
+    }
+    .msg_ck {
+        margin: 0 0 0 0;
+    }
+}
+
+.message {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+    .cars {
+        display: none;
+    }
+}
